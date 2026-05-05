@@ -13,9 +13,9 @@
   <body>
     <!-- header section  -->
     <header id="home">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg ">
         <div class="container">
-          <a class="navbar-brand" href="#">LOGO</a>
+          <a class="navbar-brand logo" href="index.html">Jane <span>Smith</span></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -463,7 +463,7 @@
           <div class="row g-4">
             <!-- Personal Info -->
             <div class="col-md-6">
-              <div class="card p-4 h-100 shadow-sm border-0">
+              <div class=" p-4 h-100  border-0">
                 <h3 class="mb-4 fw-bold text-primary">Personal Information</h3>
 
                 <ul class="list-group list-group-flush">
@@ -486,7 +486,7 @@
 
             <!-- Education -->
             <div class="col-md-6">
-              <div class="card p-4 h-100 shadow-sm border-0">
+              <div class=" p-4 h-100  border-0">
                 <h3 class="mb-4 fw-bold text-primary">Education</h3>
 
                 <ul class="list-group list-group-flush">
@@ -516,80 +516,69 @@
           <div class="row g-4 align-items-center">
             <!-- Skills -->
             <div class="col-md-6">
-              <div class="card p-4 shadow-sm border-0 h-100">
+              <div class=" p-4  border-0 h-100">
                 <h3 class="mb-4 fw-bold text-primary">Special Skills</h3>
-
+                
                 <div class="d-flex flex-wrap gap-2">
                   <span class="badge bg-primary px-3 py-2">HTML</span>
                   <span class="badge bg-success px-3 py-2">CSS</span>
                   <span class="badge bg-warning text-dark px-3 py-2"
-                    >JavaScript</span
+                  >JavaScript</span
                   >
                   <span class="badge bg-info text-dark px-3 py-2">React</span>
                   <span class="badge bg-dark px-3 py-2">Bootstrap</span>
                 </div>
               </div>
             </div>
-
-            <!-- Certificate -->
             <div class="col-md-6">
-              <div class="card p-4 shadow-sm border-0 h-100 text-center">
-                <h3 class="mb-4 fw-bold text-primary">
-                  Training Certification
-                </h3>
+              <h3 class="mb-4 fw-bold text-primary">Certifications</h3>
 
-                <button
-                  class="btn btn-primary px-4"
-                  data-bs-toggle="modal"
-                  data-bs-target="#certModal"
-                >
-                  View Certificate
-                </button>
-              </div>
-            </div>
-          </div>
+              
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  View NSDA Certificate
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NSDA Certificate</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>  
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="certModal" tabindex="-1">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-3">
-              <div class="modal-header">
-                <h5 class="modal-title">NSDA Certificate</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <div class="modal-body text-center">
-                <img
-                  src="https://i.ytimg.com/vi/EoOaHe62If8/hq720.jpg"
-                  class="img-fluid rounded shadow-sm"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+  
       </section>
 
       <!-- ================= WORK EXPERIENCE ================= -->
       <section class="py-5 bg-light">
         <div class="container">
           <h2 class="mb-5 text-black text-center">Work Experience</h2>
-
+<hr>
           <div class="row g-4">
-            <div class="col-md-6">
-              <div class="card p-3 h-100 shadow-sm border-0">
+            <div class="col-md-6 ">
+              <div class=" p-3 h-100 border-0">
                 <h5 class="fw-bold">Front-End Developer</h5>
                 <p class="mb-1 text-muted">Freelance Projects</p>
                 <small class="text-secondary">2024 - Present</small>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="card p-3 h-100 shadow-sm border-0">
+            <div class="col-md-6 ">
+              <div class=" p-3 h-100 border-0">
                 <h5 class="fw-bold">Intern Developer</h5>
                 <p class="mb-1 text-muted">Local IT Company</p>
                 <small class="text-secondary">2023</small>
@@ -599,73 +588,6 @@
         </div>
       </section>
 
-      <section class="py-5 bg-light">
-        <div class="container">
-          <!-- Page Title -->
-          <div class="text-center mb-5">
-            <h1 class="fw-bold">Contact Me</h1>
-            <p class="text-muted">Feel free to get in touch</p>
-            <hr class="w-25 mx-auto" />
-          </div>
-
-          <div class="row g-4">
-            <!-- Direct Contact Info -->
-            <div class="col-md-5">
-              <div class="card p-4 shadow-sm border-0 h-100">
-                <h4 class="mb-4 text-primary">Contact Information</h4>
-
-                <p><strong>Email:</strong> example@gmail.com</p>
-                <p><strong>Phone:</strong> 0123456789</p>
-                <p><strong>Address:</strong> Bangladesh</p>
-              </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="col-md-7">
-              <div class="card p-4 shadow-sm border-0">
-                <h4 class="mb-4 text-primary">Send Message</h4>
-
-                <form id="contactForm">
-                  <input
-                    type="text"
-                    id="name"
-                    class="form-control mb-3"
-                    placeholder="Your Name"
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    class="form-control mb-3"
-                    placeholder="Your Email"
-                  />
-                  <input
-                    type="text"
-                    id="phone"
-                    class="form-control mb-3"
-                    placeholder="Phone Number"
-                  />
-                  <input
-                    type="text"
-                    id="address"
-                    class="form-control mb-3"
-                    placeholder="Address"
-                  />
-                  <textarea
-                    id="message"
-                    class="form-control mb-3"
-                    rows="4"
-                    placeholder="Your Message"
-                  ></textarea>
-
-                  <button type="submit" class="btn btn-primary w-100">
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!-- footer section -->
