@@ -1,37 +1,29 @@
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+const form = document.getElementById("contactForm");
 
-  alert("Message sent successfully!");
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  this.reset();
-});
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  let name = document.getElementById("name").value.trim();
-  let email = document.getElementById("email").value.trim();
-  let phone = document.getElementById("phone").value.trim();
-  let message = document.getElementById("message").value.trim();
-
-  if (name === "" || email === "" || phone === "" || message === "") {
-    alert("Please fill all required fields!");
-    return;
-  }
-
-  // simple email check
-  if (!email.includes("@")) {
-    alert("Enter a valid email!");
-    return;
-  }
-
-  alert("Message sent successfully!");
-  this.reset();
-});
-// Date & Time
-let time = document.getElementById("time");
-if (time) {
-  setInterval(() => {
-    time.innerHTML = new Date().toLocaleString();
-  }, 1000);
+    if (name === "" || email === "") {
+      alert("Please fill all fields");
+    } else {
+      alert("Message sent successfully!");
+      form.reset();
+    }
+  });
 }
+
+// Time & Date
+function updateClock() {
+  const now = new Date();
+
+  document.getElementById("time").innerHTML = now.toLocaleTimeString();
+
+  document.getElementById("date").innerHTML = now.toDateString();
+}
+
+updateClock();
+setInterval(updateClock, 1000);
